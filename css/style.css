@@ -7,6 +7,7 @@ body {
     grid-template-columns: 25% 75%;
     background: rgb(65, 58, 58);
     font-family: Montserrat;
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -30,6 +31,7 @@ header nav span {
     color: rgb(219, 219, 219);
     margin-left: 0.5vw;
     top: 2vh;
+    cursor: pointer;
 }
 
 header #sidebar {
@@ -110,4 +112,34 @@ header #sidebar #container #nav-links div:hover .underline-not-selected {
 header #sidebar #container #nav-links div .underline-selected {
     visibility: visible;
     transform: scaleX(0.5);
+}
+
+main .card {
+    position: absolute;
+    left: 36.5%;
+    transition: top ease-out 2s;
+    width: 60vw;
+    height: 70vh;
+    border-radius: 20px;
+    background-color: rgb(48, 43, 43);
+}
+
+.pos-1 {
+    top: -150vh !important;
+}
+
+.pos-2 {
+    top: -75vh !important;
+}
+
+.pos-3 {
+    top: 10vh !important;
+}
+
+.pos-4 {
+    top: 125vh !important;
+}
+
+.pos-5 {
+    top: 175vh !important;
 }
