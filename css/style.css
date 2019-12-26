@@ -117,7 +117,7 @@ header #sidebar #container #nav-links div .underline-selected {
 main .card {
     position: absolute;
     left: 36.5%;
-    transition: top ease-out 2s;
+    transition: top ease 2s;
     width: 60vw;
     height: 70vh;
     border-radius: 20px;
@@ -125,21 +125,21 @@ main .card {
 }
 
 .pos-1 {
-    top: -150vh !important;
+    top: -150vh;
 }
 
 .pos-2 {
-    top: -75vh !important;
+    top: -75vh;
 }
 
 .pos-3 {
-    top: 10vh !important;
+    top: 10vh;
 }
 
 .pos-4 {
-    top: 125vh !important;
+    top: 125vh;
 }
 
 .pos-5 {
-    top: 175vh !important;
+    top: 175vh;
 }

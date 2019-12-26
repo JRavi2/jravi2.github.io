@@ -4,13 +4,21 @@ const contactNavigator = document.getElementById("nav-contact");
 const underlines = document.getElementsByClassName("underline");
 const cards = document.getElementsByClassName("card");
 
-aboutNavigator.addEventListener("click", e => {
+const TIME = 1000;
+
+aboutNavigator.addEventListener("click", async e => {
     underlines[0].classList.add("underline-selected");
     underlines[0].classList.remove("underline-not-selected");
     underlines[1].classList.remove("underline-selected");
     underlines[1].classList.add("underline-not-selected");
     underlines[2].classList.remove("underline-selected");
     underlines[2].classList.add("underline-not-selected");
+
+    if (cards[2].className === "card pos-3") {
+        portfolioNavigator.click();
+        await timer(TIME);
+        aboutNavigator.click();
+    }
 
     cards[0].className = "card";
     cards[1].className = "card";
@@ -38,13 +46,19 @@ portfolioNavigator.addEventListener("click", e => {
     cards[2].classList.add("pos-4");
 });
 
-contactNavigator.addEventListener("click", e => {
+contactNavigator.addEventListener("click", async e => {
     underlines[2].classList.add("underline-selected");
     underlines[2].classList.remove("underline-not-selected");
     underlines[1].classList.remove("underline-selected");
     underlines[1].classList.add("underline-not-selected");
     underlines[0].classList.remove("underline-selected");
     underlines[0].classList.add("underline-not-selected");
+
+    if (cards[0].className === "card pos-3") {
+        portfolioNavigator.click();
+        await timer(TIME);
+        contactNavigator.click();
+    }
 
     cards[0].className = "card";
     cards[1].className = "card";

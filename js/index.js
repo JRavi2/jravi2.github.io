@@ -3,6 +3,10 @@ const sidebar = document.getElementById("sidebar");
 
 var isSidebarOpen = true;
 
+const timer = async time => {
+    return new Promise(res => setTimeout(res, time));
+};
+
 hmIcon.addEventListener("click", e => {
     if (isSidebarOpen) {
         sidebar.classList.remove("open-anim");
