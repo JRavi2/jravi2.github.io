@@ -118,8 +118,8 @@ main .card {
     position: absolute;
     left: 36.5%;
     transition: top ease 2s;
-    width: 60vw;
-    height: 70vh;
+    width: 55vw;
+    /* height: 70vh; */
     border-radius: 20px;
     background-color: rgb(48, 43, 43);
 }
@@ -142,4 +142,33 @@ main .card {
 
 .pos-5 {
     top: 175vh;
+}
+
+main .card {
+    padding: 20px;
+}
+
+main .card h3 {
+    font-size: 35px;
+    color: rgb(206, 203, 203);
+}
+
+main #about-me p {
+    font-size: 18px;
+    color: rgb(219, 217, 217);
+}
+
+main #portfolio #projects-container {
+    display: grid;
+    grid-template-columns: 60vh 60vh;
+}
+
+main #portfolio #projects-container .project {
+    background: red;
+}
+
+main #portfolio #projects-container #sorting-visualizer {
+    height: 30vh;
+    background: url("../img/sorting-visualizer.png"), #;
+    background-size: 100% 100%;
 }
