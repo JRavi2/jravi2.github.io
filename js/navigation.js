@@ -4,7 +4,25 @@ const contactNavigator = document.getElementById("nav-contact");
 const underlines = document.getElementsByClassName("underline");
 const cards = document.getElementsByClassName("card");
 
-const TIME = 1000;
+const TIME = 1250;
+
+const upScroll = () => {
+    if (underlines[0].className === "underline underline-selected")
+        contactNavigator.click();
+    else if (underlines[1].className === "underline underline-selected")
+        aboutNavigator.click();
+    else if (underlines[2].className === "underline underline-selected")
+        portfolioNavigator.click();
+};
+
+const downScroll = () => {
+    if (underlines[0].className === "underline underline-selected")
+        portfolioNavigator.click();
+    else if (underlines[1].className === "underline underline-selected")
+        contactNavigator.click();
+    else if (underlines[2].className === "underline underline-selected")
+        aboutNavigator.click();
+};
 
 aboutNavigator.addEventListener("click", async e => {
     underlines[0].classList.add("underline-selected");
@@ -68,3 +86,23 @@ contactNavigator.addEventListener("click", async e => {
     cards[1].classList.add("pos-2");
     cards[0].classList.add("pos-1");
 });
+
+document.addEventListener("keydown", e => {
+    if (e.keyCode === 38) {
+        upScroll();
+    } else if (e.keyCode === 40) {
+        downScroll();
+    }
+});
+
+// var lastScrollTop = 0;
+// window.addEventListener("scroll", function() {
+//     console.log("Hello");
+//     var st = window.pageYOffset || document.documentElement.scrollTop;
+//     if (st > lastScrollTop) {
+//         downScroll();
+//     } else {
+//         upScroll();
+//     }
+//     lastScrollTop = st <= 0 ? 0 : st;
+// });
