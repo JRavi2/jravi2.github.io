@@ -94,15 +94,3 @@ document.addEventListener("keydown", e => {
         downScroll();
     }
 });
-
-// var lastScrollTop = 0;
-// window.addEventListener("scroll", function() {
-//     console.log("Hello");
-//     var st = window.pageYOffset || document.documentElement.scrollTop;
-//     if (st > lastScrollTop) {
-//         downScroll();
-//     } else {
-//         upScroll();
-//     }
-//     lastScrollTop = st <= 0 ? 0 : st;
-// });
