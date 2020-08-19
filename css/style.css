@@ -3,254 +3,259 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 body {
-    display: grid;
-    grid-template-columns: 25% 75%;
-    background: rgb(65, 58, 58);
-    font-family: Montserrat;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+	display: grid;
+	grid-template-columns: 25% 75%;
+	background: rgb(65, 58, 58);
+	font-family: Montserrat;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
 }
 
 header {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 10% 90%;
-    height: 100vh;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 10% 90%;
+	height: 100vh;
 }
 
 header nav {
-    background: rgb(32, 29, 29);
-    color: white;
-    z-index: 2;
+	background: rgb(32, 29, 29);
+	color: white;
+	z-index: 2;
 }
 
 header nav span {
-    text-decoration: none;
-    position: absolute;
-    color: rgb(219, 219, 219);
-    margin-left: 0.5vw;
-    top: 2vh;
-    cursor: pointer;
+	text-decoration: none;
+	position: absolute;
+	color: rgb(219, 219, 219);
+	margin-left: 0.5vw;
+	top: 2vh;
+	cursor: pointer;
 }
 
 header #sidebar {
-    position: absolute;
-    left: 2%;
-    z-index: 1;
-    background: rgb(48, 43, 43);
-    color: rgb(219, 219, 219);
-    width: 30vw;
-    height: 100vh;
-    border-radius: 20px;
-    transition: left 1000ms ease;
-    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
+	position: absolute;
+	left: 2%;
+	z-index: 1;
+	background: rgb(48, 43, 43);
+	color: rgb(219, 219, 219);
+	width: 30vw;
+	height: 100vh;
+	border-radius: 20px;
+	transition: left 1000ms ease;
+	box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 .open-anim {
-    left: 2% !important;
+	left: 2% !important;
 }
 
 .close-anim {
-    left: -25% !important;
+	left: -25% !important;
 }
 
 header #sidebar #container {
-    margin-left: 5px;
-    margin-top: 25vh;
-    text-align: center;
+	margin-left: 5px;
+	margin-top: 25vh;
+	text-align: center;
 }
 
 header #sidebar #container #name {
-    font-size: 50px;
-    margin-bottom: 0;
+	font-size: 50px;
+	margin-bottom: 0;
 }
 
 header #sidebar #container #designation {
-    font-size: 16px;
-    opacity: 0.8;
+	font-size: 16px;
+	opacity: 0.8;
 }
 
 header #sidebar #container #social a {
-    margin: 0 6px;
+	margin: 0 6px;
 }
 
 header #sidebar #container #nav-links {
-    margin-top: 7.5vh;
+	margin-top: 7.5vh;
 }
 
 header #sidebar #container #nav-links div {
-    position: relative;
-    display: inline;
+	position: relative;
+	display: inline;
 }
 
 header #sidebar #container #nav-links div a {
-    margin: 0 10px;
-    position: relative;
-    border-bottom: 10px #ffffff;
-    cursor: pointer;
+	margin: 0 10px;
+	position: relative;
+	border-bottom: 10px #ffffff;
+	cursor: pointer;
 }
 
 header #sidebar #container #nav-links div .underline {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    left: 0;
-    bottom: -2px;
-    background: #ffffff;
-    visibility: hidden;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: 250ms linear;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	left: 0;
+	bottom: -2px;
+	background: #ffffff;
+	visibility: hidden;
+	border-radius: 5px;
+	transform: scaleX(0);
+	transition: 250ms linear;
 }
 
 header #sidebar #container #nav-links div:hover .underline-not-selected {
-    visibility: visible;
-    transform: scaleX(0.2);
+	visibility: visible;
+	transform: scaleX(0.2);
 }
 
 header #sidebar #container #nav-links div .underline-selected {
-    visibility: visible;
-    transform: scaleX(0.5);
+	visibility: visible;
+	transform: scaleX(0.5);
 }
 
 main .card {
-    position: absolute;
-    left: 36.5%;
-    transition: top ease 2s;
-    width: 55vw;
-    /* height: 70vh; */
-    border-radius: 20px;
-    background-color: rgb(48, 43, 43);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	position: absolute;
+	left: 36.5%;
+	transition: top ease 2s;
+	width: 55vw;
+	/* height: 70vh; */
+	border-radius: 20px;
+	background-color: rgb(48, 43, 43);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .pos-1 {
-    top: -175vh;
+	top: -175vh;
 }
 
 .pos-2 {
-    top: -100vh;
+	top: -100vh;
 }
 
 .pos-3 {
-    top: 10vh;
+	top: 10vh;
 }
 
 .pos-4 {
-    top: 150vh;
+	top: 150vh;
 }
 
 .pos-5 {
-    top: 200vh;
+	top: 200vh;
 }
 
 main .card {
-    padding: 20px;
+	padding: 20px;
 }
 
 main .card h3 {
-    font-size: 35px;
-    color: rgb(206, 203, 203);
+	font-size: 35px;
+	color: rgb(206, 203, 203);
 }
 
 main #about-me p {
-    font-size: 18px;
-    color: rgb(219, 217, 217);
+	font-size: 18px;
+	color: rgb(219, 217, 217);
 }
 
 main #portfolio #projects-container {
-    display: grid;
-    grid-template-columns: 55vh 55vh;
-    margin-left: 1.5%;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 55vh 55vh;
+	margin-left: 1.5%;
 }
 
 main #portfolio #projects-container .project {
-    height: 30vh;
-    background-size: 100% 100%;
-    transition: box-shadow ease 1000ms;
-    text-align: center;
+	height: 30vh;
+	background-size: 100% 100%;
+	transition: box-shadow ease 1000ms;
+	text-align: center;
 }
 
 main #portfolio #projects-container .project:hover {
-    box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.5);
 }
 
 main #portfolio #projects-container .project:hover h3 {
-    opacity: 1;
+	opacity: 1;
 }
 
 main #portfolio #projects-container .project:hover a {
-    opacity: 1;
+	opacity: 1;
 }
 
 main #portfolio #projects-container .project h3 {
-    opacity: 0;
-    font-size: 30px;
-    color: white;
-    transition: opacity ease 0.5s;
+	opacity: 0;
+	font-size: 30px;
+	color: white;
+	transition: opacity ease 0.5s;
 }
 
 main #portfolio #projects-container .project a {
-    color: #ffffff;
-    padding: 10px 40px;
-    text-decoration: none;
-    border: #ffffff solid 1px;
-    border-radius: 15px;
-    opacity: 0;
-    transition: opacity ease 0.5s;
-    transition: color ease 1s;
-    transition: background ease 0.5s;
+	color: #ffffff;
+	padding: 10px 40px;
+	text-decoration: none;
+	border: #ffffff solid 1px;
+	border-radius: 15px;
+	opacity: 0;
+	transition: opacity ease 0.5s;
+	transition: color ease 1s;
+	transition: background ease 0.5s;
 }
 
 main #portfolio #projects-container .project a:hover {
-    color: #000000;
-    background: #ffffff;
+	color: #000000;
+	background: #ffffff;
 }
 
 main #portfolio #projects-container .project .link-site {
-    position: relative;
-    /* left: 10%; */
-    margin-right: 2.5vw;
-    top: 5vh;
+	position: relative;
+	/* left: 10%; */
+	margin-right: 2.5vw;
+	top: 5vh;
 }
 
 main #portfolio #projects-container .project .link-github {
-    position: relative;
-    /* left: 20%; */
-    top: 5vh;
+	position: relative;
+	/* left: 20%; */
+	top: 5vh;
+}
+
+main #portfolio #projects-container #tab-manager {
+	background-image: url("../img/tab-manager.png");
 }
 
 main #portfolio #projects-container #sorting-visualizer {
-    background-image: url("../img/sorting-visualizer.png");
+	background-image: url("../img/sorting-visualizer.png");
 }
 
 main #portfolio #projects-container #weather-app {
-    background-image: url("../img/weather-app.PNG");
+	background-image: url("../img/weather-app.PNG");
 }
 
 main #portfolio #projects-container #dynamic-lp {
-    background-image: url("../img/dynamic-page.PNG");
+	background-image: url("../img/dynamic-page.PNG");
 }
 
 main #contact table {
-    border: 0;
-    border-radius: 5px;
+	border: 0;
+	border-radius: 5px;
 }
 
 main #contact th {
-    padding: 1vh 10vh;
-    border: 0;
-    background-color: rgb(56, 50, 50);
+	padding: 1vh 10vh;
+	border: 0;
+	background-color: rgb(56, 50, 50);
 }
 
 main #contact td {
-    padding: 1vh 30vh;
-    border: 0;
-    background-color: rgb(37, 34, 34);
+	padding: 1vh 30vh;
+	border: 0;
+	background-color: rgb(37, 34, 34);
 }
 
 main #contact #top {
-    border-top-right-radius: 20px;
+	border-top-right-radius: 20px;
 }
