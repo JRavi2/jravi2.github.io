@@ -14,35 +14,18 @@ body {
 
 header {
 	height: 100%;
-	display: grid;
-	grid-template-columns: 10% 90%;
 	height: 100vh;
-}
-
-header nav {
-	background: rgb(32, 29, 29);
-	color: white;
-	z-index: 2;
-}
-
-header nav span {
-	text-decoration: none;
-	position: absolute;
-	color: rgb(219, 219, 219);
-	margin-left: 0.5vw;
-	top: 2vh;
-	cursor: pointer;
 }
 
 header #sidebar {
 	position: absolute;
-	left: 2%;
 	z-index: 1;
 	background: rgb(48, 43, 43);
 	color: rgb(219, 219, 219);
-	width: 30vw;
+	width: 28vw;
 	height: 100vh;
-	border-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
 	transition: left 1000ms ease;
 	box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
 }
