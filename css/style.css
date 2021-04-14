@@ -158,7 +158,7 @@ main #portfolio #projects-container .project {
 }
 
 main #portfolio #projects-container .project:hover {
-	box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.75);
 }
 
 main #portfolio #projects-container .project:hover h3 {
@@ -218,8 +218,8 @@ main #portfolio #projects-container #weather-app {
 	background-image: url("../img/weather-app.PNG");
 }
 
-main #portfolio #projects-container #dynamic-lp {
-	background-image: url("../img/dynamic-page.PNG");
+main #portfolio #projects-container #chat-analyzer {
+	background-image: url("../img/chat-analyzer.png");
 }
 
 main #contact table {
