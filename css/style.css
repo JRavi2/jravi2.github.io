@@ -147,7 +147,7 @@ main #portfolio #projects-container {
 	display: grid;
 	grid-gap: 10px;
 	grid-template-columns: 55vh 55vh;
-	margin-left: 1.5%;
+	margin-left: .5%;
 }
 
 main #portfolio #projects-container .project {
